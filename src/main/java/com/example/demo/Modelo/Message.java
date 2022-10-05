@@ -23,7 +23,7 @@ public class Message {
     private String messageText;
 
     @ManyToOne
-    @JoinColumn(name = "roomId")
+    @JoinColumn(name = "id")
     @JsonIgnoreProperties({"messages","reservations"})
     private Room room;
      
