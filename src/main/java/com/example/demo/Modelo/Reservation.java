@@ -20,9 +20,9 @@ public class Reservation {
     private Date startDate;
     private Date devolutionDate;
     private String status="created";
-    
+        
     @ManyToOne
-    @JoinColumn(name = "roomId")
+    @JoinColumn(name = "roomid")
     @JsonIgnoreProperties("reservations")
     private Room room;
      
@@ -87,6 +87,4 @@ public class Reservation {
     public void setScore(String score) {
         this.score = score;
     }
-
-    
 }
